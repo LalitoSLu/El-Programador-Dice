@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simón Dice - Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div id="inicio" class="inicio-container">
+        <h1 class="title">Bienvenido a El Programador Dice</h1>
+        <div class="menu">
+            <button id="startGame">Entrar al Juego</button>
+            <button id="instructions" onclick="location.href='instructions.html'">Instrucciones</button>
+            <button id="rules" onclick="location.href='rules.html'">Rules</button>
+            <button id="legend" onclick="location.href='legend.html'">legend</button>
+        </div>
+    </div>
+<div id="questionModal" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="questionText"></h2>
+        <p id="explanationText"></p>
+        <div id="optionsContainer"></div>
+    </div>
+</div>
+<div id="errorModal" class="modal hidden">
+    <div class="modal-content">
+        <h2>SHAE</h2>
+        <p>Upps ponte a estudiar la leyenda</p>
+        <button id="closeErrorModal">Aceptar</button>
+    </div>
+</div>
+
+    <div id="game" class="simon hidden">
+        <div class="title">El Programador Dice</div>
+        <button id="startButton">Start</button>
+        <div class="buttonContainer">
+            <div class="square red"></div>
+            <div class="square yellow"></div>
+            <div class="square blue"></div>
+            <div class="square green"></div>
+        </div>
+        <div id="round"></div>
+        <button id="goBack">Regresar a Inicio</button>
+    </div>
+</body>
+</html>
